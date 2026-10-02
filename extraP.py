@@ -45,5 +45,7 @@ def descente(hero: Personnage, monstres: list[Personnage]) -> bool:
             return False
         print(f"{monstre.nom} est vaincu !")
         inventaire.ajouter(f"Butin de {monstre.nom}")
-    print(f"{hero.nom} a traversé le donjon !")
+        print(f"{hero.nom} a traversé le donjon !")
+    print(f"Monstres vaincus : {len(monstres)}")
+    print(f"Butin récupéré : {inventaire.objets}")
     return True
